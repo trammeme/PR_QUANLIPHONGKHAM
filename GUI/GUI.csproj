@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E33BCFD3-BAB3-4A90-8290-214B79E61190}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v23.2, Version=23.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v23.2, Version=23.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v23.2, Version=23.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v23.2.Core, Version=23.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v23.2.Core, Version=23.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v23.2, Version=23.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v23.2, Version=23.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCaTruc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaTruc.Designer.cs">
+      <DependentUpon>frmCaTruc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDKLK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDKLK.Designer.cs">
+      <DependentUpon>frmDKLK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLBN.Designer.cs">
+      <DependentUpon>frmQLBN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmqlDKLK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmqlDKLK.Designer.cs">
+      <DependentUpon>frmqlDKLK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLNV.Designer.cs">
+      <DependentUpon>frmQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtaobenhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtaobenhan.Designer.cs">
+      <DependentUpon>frmtaobenhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmxemthuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmxemthuoc.Designer.cs">
+      <DependentUpon>frmxemthuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCaTruc.resx">
+      <DependentUpon>frmCaTruc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDKLK.resx">
+      <DependentUpon>frmDKLK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLBN.resx">
+      <DependentUpon>frmQLBN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmqlDKLK.resx">
+      <DependentUpon>frmqlDKLK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLNV.resx">
+      <DependentUpon>frmQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtaobenhan.resx">
+      <DependentUpon>frmtaobenhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmxemthuoc.resx">
+      <DependentUpon>frmxemthuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DOANPK.Bussiness\DOANPK.Bussiness.csproj">
+      <Project>{db01157d-c0b7-4c67-90ea-27828277c085}</Project>
+      <Name>DOANPK.Bussiness</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap nhat3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %2847.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xóa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-mau-tim_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-nuoc-xanh-duong-dep_092909307.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-dep-mau-xanh-ngoc_051044967.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10bb8dc1d45a1c8a88057498723cf480.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5422183318339_08751dae19364b41d7067269e6917aa8 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5422183325257_0e87805bb78b41eec9cc3e17870d6f6f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5422240165180_851fc22d305b25c826df7704e3c0909c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5422247361401_99a19a550dc5ee8b305fd8c156ab9738.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0304.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5422249746096_705ca5064f1fe9751fc5f5bdffa5b661.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13340ff54e69e768ff37b0abc44cf36c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5422275586649_21ec1e1ccb6c50d6265b5f7b3576b0fc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-mau-hong-pastel-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-3d-mau-xanh_051044436.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0b52cfa20534e151d7c781034eb22588.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\286591.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue-Pink-Pastel-Cute-Wallpaper-HD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03041.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a7e4fd0a0599315162d1f5a4e86e0d24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5424641845729_c8f42426e410e706b51f099fda01cd81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5424641855719_bdefb4603f722d8ddf06a3680c847573.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5424641864757_b8bb1bc44014af8bf3f671db18df48bc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1330715.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
