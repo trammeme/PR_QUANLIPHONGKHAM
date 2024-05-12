@@ -42,5 +42,10 @@ namespace GUI
                 MessageBox.Show("Chưa nhập Mã Thuốc !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btntrove_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

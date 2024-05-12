@@ -16,9 +16,9 @@ namespace GUI
            //  Application.SetCompatibleTextRenderingDefault(false);
         //  Application.Run(new frmtaobenhan ());
            //  Application.Run(new frmQLBN ());
-                Application.Run(new frmDKLK());
-             //Application.Run(new frmCaTruc());
-           // Application.Run(new frmLogin());
+            //    Application.Run(new frmDKLK());
+           //  Application.Run(new frmCaTruc());
+            Application.Run(new frmLogin());
 
             //  Application.Run(new frmQLNV());
             //   Application.Run(new frmxemthuoc());

@@ -106,6 +106,11 @@ namespace GUI
             dgvQLBN.AllowUserToResizeColumns = true;
             dgvQLBN.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
     }
 
