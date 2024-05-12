@@ -58,8 +58,23 @@ namespace DOANPK.DataAccess
 
                 return data;
             }
+        public bool CheckLogin(string username, string password)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
 
-            public int ExecuteNonQuery(string query, object[] parameter = null)
+                string query = "SELECT COUNT(*) FROM Users WHERE UserName = @username AND Password = @password";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@username", username);
+                command.Parameters.AddWithValue("@password", password);
+
+                int count = (int)command.ExecuteScalar();
+
+                return count > 0;
+            }
+        }
+        public int ExecuteNonQuery(string query, object[] parameter = null)
             {
                 int data = 0;
 
