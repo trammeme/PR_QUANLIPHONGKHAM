@@ -21,9 +21,26 @@ namespace DOANPK.DataAccess
 
         public bool Login(string userName, string passWord)
         {
-            string query = "SELECT Password FROM dbo.Users WHERE UserName = @username";
-            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { userName });
+            string query = "USP_Login @userName , @passWord";
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { userName, passWord });
+
             return result.Rows.Count > 0;
         }
+
+        public string GetMaLoai(string userName)
+        {
+            string query = "SELECT UserName FROM Users WHERE UserName = @userName";
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { userName });
+            if (result.Rows.Count > 0)
+            {
+                return result.Rows[0]["UserName"].ToString();
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
+
 }

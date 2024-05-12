@@ -9,16 +9,12 @@ namespace DOANPK.Bussiness
 {
     public class LoginBUS
     {
-        private LoginDL loginDL;
 
-        public LoginBUS()
+        public static bool Login(string username, string password)
         {
-            loginDL = LoginDL.Instance;
+            return DataProvider.Instance.CheckLogin(username, password);
         }
 
-        public bool Login(string userName, string passWord)
-        {
-            return loginDL.Login(userName, passWord);
-        }
+
     }
 }

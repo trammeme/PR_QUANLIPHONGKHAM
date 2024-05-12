@@ -1,4 +1,6 @@
-﻿namespace GUI
+﻿using System;
+
+namespace GUI
 {
     partial class frmLogin
     {
@@ -28,6 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -35,15 +38,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.MaskedTextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Salmon;
-            this.btnExit.Location = new System.Drawing.Point(569, 398);
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnExit.Location = new System.Drawing.Point(586, 389);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(92, 45);
+            this.btnExit.Size = new System.Drawing.Size(135, 45);
             this.btnExit.TabIndex = 13;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -52,10 +61,12 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Salmon;
-            this.btnLogin.Location = new System.Drawing.Point(297, 398);
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLogin.Location = new System.Drawing.Point(259, 389);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(89, 45);
+            this.btnLogin.Size = new System.Drawing.Size(135, 45);
             this.btnLogin.TabIndex = 12;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -64,8 +75,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(213, 321);
+            this.label3.Location = new System.Drawing.Point(183, 321);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(132, 29);
             this.label3.TabIndex = 11;
@@ -74,10 +86,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(213, 234);
+            this.label2.Location = new System.Drawing.Point(183, 234);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 29);
             this.label2.TabIndex = 10;
@@ -86,10 +98,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(318, 121);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Ravie", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(274, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 64);
+            this.label1.Size = new System.Drawing.Size(398, 76);
             this.label1.TabIndex = 9;
             this.label1.Text = "Đăng Nhập";
             // 
@@ -109,11 +122,20 @@
             this.txtUsername.Size = new System.Drawing.Size(291, 26);
             this.txtUsername.TabIndex = 7;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GUI.Properties.Resources._7361af996c8d524c02661a244cd767f5;
+            this.BackgroundImage = global::GUI.Properties.Resources.c29e2f533699616b07c7c17b40fd0fb2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
@@ -125,6 +147,9 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmLogin";
             this.Text = "frmLogin";
+            this.Load += new System.EventHandler(this.frmLogin_Load_2);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,5 +164,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox txtPassword;
         private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
+        private EventHandler frmLogin_Load;
+        private EventHandler frmLogin_Load_1;
     }
 }
