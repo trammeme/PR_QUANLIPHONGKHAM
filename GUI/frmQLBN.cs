@@ -111,6 +111,16 @@ namespace GUI
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmchucnang frmchucnang = new frmchucnang();
+            frmchucnang.Hide();
+            // Mở form đăng nhập
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
+        }
     }
     }
 

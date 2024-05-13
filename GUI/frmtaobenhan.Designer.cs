@@ -87,15 +87,15 @@
             // 
             // btntrove
             // 
-            this.btntrove.BackColor = System.Drawing.Color.Transparent;
+            this.btntrove.BackColor = System.Drawing.Color.RosyBrown;
             this.btntrove.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btntrove.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntrove.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntrove.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btntrove.Location = new System.Drawing.Point(1, -1);
+            this.btntrove.Location = new System.Drawing.Point(1, 993);
             this.btntrove.Name = "btntrove";
-            this.btntrove.Size = new System.Drawing.Size(63, 67);
+            this.btntrove.Size = new System.Drawing.Size(201, 62);
             this.btntrove.TabIndex = 46;
-            this.btntrove.Text = "↩️";
+            this.btntrove.Text = "Đăng Xuất";
             this.btntrove.UseVisualStyleBackColor = false;
             this.btntrove.Click += new System.EventHandler(this.btntrove_Click);
             // 

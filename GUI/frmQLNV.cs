@@ -142,5 +142,14 @@ namespace GUI
             dgvdsnv.AllowUserToResizeColumns = true;
             dgvdsnv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            // Mở form đăng nhập
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
+        }
     }
     }
