@@ -13,7 +13,7 @@ using System.Windows.Forms;
 namespace GUI
 {
     public partial class frmqlDKLK : Form
-    {            XembenhnhaBUS dkk = new XembenhnhaBUS();
+    {            qllkBUS dkk = new qllkBUS();
 
         public frmqlDKLK()
         {
@@ -23,14 +23,16 @@ namespace GUI
 
             private void load_data()
             {
-                XembenhnhaBUS xdklk = new XembenhnhaBUS();
-                dgvdklk.DataSource = xdklk.LayDSBN();
+                qllkBUS xdklk = new qllkBUS();
+                dgvdklk.DataSource = xdklk.LayDSlk();
             }
 
 
 
            
-        private void btnxemlich_Click(object sender, EventArgs e)
+        
+
+        private void btnxemlich_Click_1(object sender, EventArgs e)
         {
                 load_data();
 

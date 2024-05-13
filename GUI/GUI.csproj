@@ -61,11 +61,23 @@
     <Compile Include="frmCaTruc.Designer.cs">
       <DependentUpon>frmCaTruc.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmchucnang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmchucnang.Designer.cs">
+      <DependentUpon>frmchucnang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDKLK.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDKLK.Designer.cs">
       <DependentUpon>frmDKLK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgiaodienchinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgiaodienchinh.Designer.cs">
+      <DependentUpon>frmgiaodienchinh.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -108,8 +120,14 @@
     <EmbeddedResource Include="frmCaTruc.resx">
       <DependentUpon>frmCaTruc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmchucnang.resx">
+      <DependentUpon>frmchucnang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDKLK.resx">
       <DependentUpon>frmDKLK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgiaodienchinh.resx">
+      <DependentUpon>frmgiaodienchinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -262,6 +280,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\c29e2f533699616b07c7c17b40fd0fb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5422247368041_9bb6acc84a683da599b2715cdb913d0a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5422247361401_99a19a550dc5ee8b305fd8c156ab97381.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phong-nen-mau-xanh-cong-ty-365_25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-wallpaper-img-phong-cảnh-anime-phone-live-aesthetic-anime-sky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5422247368041_9bb6acc84a683da599b2715cdb913d0a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue-Pink-Pastel-Cute-Wallpaper-HD1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %283%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

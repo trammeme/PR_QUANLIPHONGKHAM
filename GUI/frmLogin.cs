@@ -53,33 +53,17 @@ namespace GUI
 
 
         }
-        private void OpenCorrespondingForm(string username)
+        public void OpenCorrespondingForm(string username)
         {
-            switch (username)
-            {
-                case "NVQL":
-                    frmQLBN frmQLBN = new frmQLBN();
-                    frmQLBN.Show();
-                    break;
-                case "NVBS":
-                    frmtaobenhan frmtaobenhan = new frmtaobenhan();
-                    frmtaobenhan.Show();
-                    break;
-                case "NVDS":
-                    frmxemthuoc frmxemthuoc = new frmxemthuoc();
-                    frmxemthuoc.Show();
-                    break;
-                case "NVLT":
-                    frmDKLK frmDKLK = new frmDKLK();
-                    frmDKLK.Show();
-                    break;
+            frmchucnang frmchucnang = new frmchucnang();
+            // Gán sự kiện để khi form chức năng đóng lại, hiện lại form đăng nhập
+            frmchucnang.FormClosed += (s, args) => this.Show();
+            // Hiển thị form chức năng
+            frmchucnang.Show();
 
-                default:
-                    MessageBox.Show("Không có form tương ứng với tên đăng nhập này!");
-                    break;
-            }
+            // Điều chỉnh hiển thị các nút tương ứng với tên đăng nhập
+            frmchucnang.AdjustButtonsVisibility(username);
         }
-
         private void btnExit_Click_1(object sender, EventArgs e)
         {
             this.Close();

@@ -46,6 +46,7 @@
     <Compile Include="LoginBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLBNBUS.cs" />
+    <Compile Include="qllkBUS.cs" />
     <Compile Include="QLNVBUS.cs" />
     <Compile Include="TaoBABUS.cs" />
     <Compile Include="XembenhnhaBUS.cs" />

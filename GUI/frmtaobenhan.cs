@@ -94,6 +94,10 @@ namespace GUI
         private void btntrove_Click(object sender, EventArgs e)
         {
             this.Close();
+
+            // Mở form đăng nhập
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)

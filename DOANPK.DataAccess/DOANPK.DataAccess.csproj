@@ -48,6 +48,7 @@
     <Compile Include="LoginDL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLBNDL.cs" />
+    <Compile Include="qllkDL.cs" />
     <Compile Include="QLNVDL.cs" />
     <Compile Include="TaoBADL.cs" />
     <Compile Include="xemBenhNhanDL.cs" />
