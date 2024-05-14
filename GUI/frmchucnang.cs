@@ -155,13 +155,13 @@ namespace GUI
 
         private void quanlibenhnhan_Click(object sender, EventArgs e)
         {
-            frmQLNV frmQLNV = new frmQLNV();
-            frmQLNV.TopLevel = false;
-            frmQLNV.FormBorderStyle = FormBorderStyle.None;
-            frmQLNV.Dock = DockStyle.Fill;
-            paneljg.Controls.Add(frmQLNV);
+            frmQLBN frmQLBN = new frmQLBN();
+            frmQLBN.TopLevel = false;
+            frmQLBN.FormBorderStyle = FormBorderStyle.None;
+            frmQLBN.Dock = DockStyle.Fill;
+            paneljg.Controls.Add(frmQLBN);
 
-            frmQLNV.Show();
+            frmQLBN.Show();
         }
 
         private void quanlilichkham_Click(object sender, EventArgs e)
@@ -172,6 +172,14 @@ namespace GUI
             frmqlDKLK.Dock = DockStyle.Fill;
             paneljg.Controls.Add(frmqlDKLK);
             frmqlDKLK.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.ShowDialog();
         }
     }
     }

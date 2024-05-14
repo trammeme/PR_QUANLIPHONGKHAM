@@ -34,34 +34,36 @@
             this.btnds = new System.Windows.Forms.Button();
             this.btnbs = new System.Windows.Forms.Button();
             this.btnql = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.paneljg = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.qunalicatruc = new System.Windows.Forms.ToolStripMenuItem();
             this.quanlibenhnhan = new System.Windows.Forms.ToolStripMenuItem();
             this.quanlinhanvine = new System.Windows.Forms.ToolStripMenuItem();
             this.quanlilichkham = new System.Windows.Forms.ToolStripMenuItem();
+            this.paneljg = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel2.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.btnletan);
             this.panel2.Controls.Add(this.btnds);
             this.panel2.Controls.Add(this.btnbs);
             this.panel2.Controls.Add(this.btnql);
-            this.panel2.Location = new System.Drawing.Point(12, 191);
+            this.panel2.Location = new System.Drawing.Point(12, 187);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(210, 852);
+            this.panel2.Size = new System.Drawing.Size(210, 856);
             this.panel2.TabIndex = 1;
             // 
             // btnletan
             // 
-            this.btnletan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnletan.BackColor = System.Drawing.Color.Teal;
             this.btnletan.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnletan.ForeColor = System.Drawing.Color.Chocolate;
+            this.btnletan.ForeColor = System.Drawing.Color.SeaShell;
             this.btnletan.Location = new System.Drawing.Point(21, 286);
             this.btnletan.Name = "btnletan";
             this.btnletan.Size = new System.Drawing.Size(173, 55);
@@ -72,9 +74,9 @@
             // 
             // btnds
             // 
-            this.btnds.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnds.BackColor = System.Drawing.Color.Teal;
             this.btnds.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnds.ForeColor = System.Drawing.Color.Chocolate;
+            this.btnds.ForeColor = System.Drawing.Color.SeaShell;
             this.btnds.Location = new System.Drawing.Point(21, 197);
             this.btnds.Name = "btnds";
             this.btnds.Size = new System.Drawing.Size(173, 55);
@@ -85,9 +87,9 @@
             // 
             // btnbs
             // 
-            this.btnbs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnbs.BackColor = System.Drawing.Color.Teal;
             this.btnbs.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbs.ForeColor = System.Drawing.Color.Chocolate;
+            this.btnbs.ForeColor = System.Drawing.Color.SeaShell;
             this.btnbs.Location = new System.Drawing.Point(21, 116);
             this.btnbs.Name = "btnbs";
             this.btnbs.Size = new System.Drawing.Size(173, 55);
@@ -98,10 +100,10 @@
             // 
             // btnql
             // 
-            this.btnql.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnql.BackColor = System.Drawing.Color.Teal;
             this.btnql.ContextMenuStrip = this.contextMenuStrip1;
             this.btnql.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnql.ForeColor = System.Drawing.Color.Chocolate;
+            this.btnql.ForeColor = System.Drawing.Color.SeaShell;
             this.btnql.Location = new System.Drawing.Point(21, 34);
             this.btnql.Name = "btnql";
             this.btnql.Size = new System.Drawing.Size(173, 55);
@@ -109,23 +111,6 @@
             this.btnql.Text = "QUẢN LÍ";
             this.btnql.UseVisualStyleBackColor = false;
             this.btnql.Click += new System.EventHandler(this.btnql_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.BackgroundImage = global::GUI.Properties.Resources.images1;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(210, 173);
-            this.panel1.TabIndex = 0;
-            // 
-            // paneljg
-            // 
-            this.paneljg.Location = new System.Drawing.Point(228, 12);
-            this.paneljg.Name = "paneljg";
-            this.paneljg.Size = new System.Drawing.Size(1874, 1031);
-            this.paneljg.TabIndex = 2;
             // 
             // contextMenuStrip1
             // 
@@ -138,10 +123,11 @@
             this.quanlinhanvine,
             this.quanlilichkham});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(253, 136);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(253, 108);
             // 
             // qunalicatruc
             // 
+            this.qunalicatruc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.qunalicatruc.Name = "qunalicatruc";
             this.qunalicatruc.Size = new System.Drawing.Size(252, 26);
             this.qunalicatruc.Text = "Quản Lí Ca Trực ";
@@ -149,6 +135,8 @@
             // 
             // quanlibenhnhan
             // 
+            this.quanlibenhnhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.quanlibenhnhan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.quanlibenhnhan.Name = "quanlibenhnhan";
             this.quanlibenhnhan.Size = new System.Drawing.Size(252, 26);
             this.quanlibenhnhan.Text = "Quản Lí Bệnh Nhân";
@@ -156,6 +144,7 @@
             // 
             // quanlinhanvine
             // 
+            this.quanlinhanvine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.quanlinhanvine.Name = "quanlinhanvine";
             this.quanlinhanvine.Size = new System.Drawing.Size(252, 26);
             this.quanlinhanvine.Text = "Quản Lí Nhân Viên";
@@ -163,10 +152,42 @@
             // 
             // quanlilichkham
             // 
+            this.quanlilichkham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.quanlilichkham.Name = "quanlilichkham";
             this.quanlilichkham.Size = new System.Drawing.Size(252, 26);
             this.quanlilichkham.Text = "Quản Lí Lịch Khám";
             this.quanlilichkham.Click += new System.EventHandler(this.quanlilichkham_Click);
+            // 
+            // paneljg
+            // 
+            this.paneljg.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.paneljg.Location = new System.Drawing.Point(228, 3);
+            this.paneljg.Name = "paneljg";
+            this.paneljg.Size = new System.Drawing.Size(1874, 1040);
+            this.paneljg.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Green;
+            this.panel1.BackgroundImage = global::GUI.Properties.Resources.Ảnh_chụp_màn_hình_2024_05_14_1752441;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(-6, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(236, 182);
+            this.panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Teal;
+            this.button1.Font = new System.Drawing.Font("Circle", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.SeaShell;
+            this.button1.Location = new System.Drawing.Point(21, 634);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(173, 55);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "ĐĂNG XUẤT";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmchucnang
             // 
@@ -202,5 +223,6 @@
         private System.Windows.Forms.ToolStripMenuItem quanlibenhnhan;
         private System.Windows.Forms.ToolStripMenuItem quanlinhanvine;
         private System.Windows.Forms.ToolStripMenuItem quanlilichkham;
+        private System.Windows.Forms.Button button1;
     }
 }

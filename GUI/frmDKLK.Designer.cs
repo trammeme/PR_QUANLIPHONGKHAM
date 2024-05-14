@@ -55,7 +55,7 @@
             // txtmalkrd
             // 
             this.txtmalkrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmalkrd.Location = new System.Drawing.Point(746, 675);
+            this.txtmalkrd.Location = new System.Drawing.Point(842, 698);
             this.txtmalkrd.Name = "txtmalkrd";
             this.txtmalkrd.Size = new System.Drawing.Size(311, 30);
             this.txtmalkrd.TabIndex = 71;
@@ -65,7 +65,7 @@
             this.randomma.BackColor = System.Drawing.Color.RosyBrown;
             this.randomma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.randomma.ForeColor = System.Drawing.Color.White;
-            this.randomma.Location = new System.Drawing.Point(1063, 673);
+            this.randomma.Location = new System.Drawing.Point(1159, 696);
             this.randomma.Name = "randomma";
             this.randomma.Size = new System.Drawing.Size(136, 32);
             this.randomma.TabIndex = 70;
@@ -77,7 +77,7 @@
             // 
             this.cbchonbacsi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbchonbacsi.FormattingEnabled = true;
-            this.cbchonbacsi.Location = new System.Drawing.Point(750, 503);
+            this.cbchonbacsi.Location = new System.Drawing.Point(846, 526);
             this.cbchonbacsi.Name = "cbchonbacsi";
             this.cbchonbacsi.Size = new System.Drawing.Size(449, 28);
             this.cbchonbacsi.TabIndex = 69;
@@ -88,7 +88,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(562, 507);
+            this.label10.Location = new System.Drawing.Point(658, 530);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(142, 31);
             this.label10.TabIndex = 68;
@@ -99,7 +99,7 @@
             this.btndangki.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btndangki.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndangki.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btndangki.Location = new System.Drawing.Point(991, 789);
+            this.btndangki.Location = new System.Drawing.Point(1019, 812);
             this.btndangki.Name = "btndangki";
             this.btndangki.Size = new System.Drawing.Size(208, 51);
             this.btndangki.TabIndex = 65;
@@ -110,7 +110,7 @@
             // dtlichkham
             // 
             this.dtlichkham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtlichkham.Location = new System.Drawing.Point(750, 561);
+            this.dtlichkham.Location = new System.Drawing.Point(846, 584);
             this.dtlichkham.Name = "dtlichkham";
             this.dtlichkham.Size = new System.Drawing.Size(449, 27);
             this.dtlichkham.TabIndex = 64;
@@ -121,7 +121,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(562, 725);
+            this.label9.Location = new System.Drawing.Point(658, 748);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(147, 31);
             this.label9.TabIndex = 63;
@@ -133,7 +133,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(562, 564);
+            this.label8.Location = new System.Drawing.Point(658, 587);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(187, 31);
             this.label8.TabIndex = 62;
@@ -145,7 +145,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(562, 455);
+            this.label6.Location = new System.Drawing.Point(658, 478);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(159, 31);
             this.label6.TabIndex = 60;
@@ -157,7 +157,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(562, 400);
+            this.label3.Location = new System.Drawing.Point(658, 423);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 31);
             this.label3.TabIndex = 57;
@@ -169,7 +169,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(562, 342);
+            this.label2.Location = new System.Drawing.Point(658, 365);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 31);
             this.label2.TabIndex = 56;
@@ -181,7 +181,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(562, 280);
+            this.label1.Location = new System.Drawing.Point(658, 303);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 31);
             this.label1.TabIndex = 55;
@@ -190,7 +190,7 @@
             // txtemail
             // 
             this.txtemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemail.Location = new System.Drawing.Point(750, 397);
+            this.txtemail.Location = new System.Drawing.Point(846, 420);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(449, 27);
             this.txtemail.TabIndex = 54;
@@ -198,7 +198,7 @@
             // txttrieuchung
             // 
             this.txttrieuchung.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttrieuchung.Location = new System.Drawing.Point(746, 722);
+            this.txttrieuchung.Location = new System.Drawing.Point(842, 745);
             this.txttrieuchung.Name = "txttrieuchung";
             this.txttrieuchung.Size = new System.Drawing.Size(453, 27);
             this.txttrieuchung.TabIndex = 52;
@@ -206,7 +206,7 @@
             // dtngaysinh
             // 
             this.dtngaysinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtngaysinh.Location = new System.Drawing.Point(750, 339);
+            this.dtngaysinh.Location = new System.Drawing.Point(846, 362);
             this.dtngaysinh.Name = "dtngaysinh";
             this.dtngaysinh.Size = new System.Drawing.Size(449, 27);
             this.dtngaysinh.TabIndex = 51;
@@ -214,7 +214,7 @@
             // txthoten
             // 
             this.txthoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txthoten.Location = new System.Drawing.Point(750, 280);
+            this.txthoten.Location = new System.Drawing.Point(846, 303);
             this.txthoten.Name = "txthoten";
             this.txthoten.Size = new System.Drawing.Size(449, 27);
             this.txthoten.TabIndex = 48;
@@ -223,7 +223,7 @@
             // 
             this.cbboxchuyenghanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbboxchuyenghanh.FormattingEnabled = true;
-            this.cbboxchuyenghanh.Location = new System.Drawing.Point(750, 454);
+            this.cbboxchuyenghanh.Location = new System.Drawing.Point(846, 477);
             this.cbboxchuyenghanh.Name = "cbboxchuyenghanh";
             this.cbboxchuyenghanh.Size = new System.Drawing.Size(449, 28);
             this.cbboxchuyenghanh.TabIndex = 47;
@@ -233,7 +233,7 @@
             // 
             this.cbbchongiok.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbchongiok.FormattingEnabled = true;
-            this.cbbchongiok.Location = new System.Drawing.Point(746, 619);
+            this.cbbchongiok.Location = new System.Drawing.Point(842, 642);
             this.cbbchongiok.Name = "cbbchongiok";
             this.cbbchongiok.Size = new System.Drawing.Size(453, 28);
             this.cbbchongiok.TabIndex = 74;
@@ -245,7 +245,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(557, 619);
+            this.label4.Location = new System.Drawing.Point(653, 642);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 31);
             this.label4.TabIndex = 75;
@@ -257,7 +257,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(562, 676);
+            this.label5.Location = new System.Drawing.Point(658, 699);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(172, 31);
             this.label5.TabIndex = 76;
@@ -272,10 +272,10 @@
             this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl1.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftTop;
-            this.labelControl1.Location = new System.Drawing.Point(655, 158);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(118);
+            this.labelControl1.Location = new System.Drawing.Point(678, 134);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(148, 148, 148, 148);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(924, 82);
+            this.labelControl1.Size = new System.Drawing.Size(1155, 102);
             this.labelControl1.TabIndex = 67;
             this.labelControl1.Text = "Đăng Kí Lịch Khám";
             // 
@@ -284,7 +284,7 @@
             this.btnhuydk.BackColor = System.Drawing.Color.Red;
             this.btnhuydk.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnhuydk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnhuydk.Location = new System.Drawing.Point(602, 789);
+            this.btnhuydk.Location = new System.Drawing.Point(746, 812);
             this.btnhuydk.Name = "btnhuydk";
             this.btnhuydk.Size = new System.Drawing.Size(208, 51);
             this.btnhuydk.TabIndex = 66;

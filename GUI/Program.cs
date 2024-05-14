@@ -13,8 +13,8 @@ namespace GUI
         static void Main()
         {
             Application.EnableVisualStyles();
-          
-            Application.Run(new frmgiaodienchinh());
+
+            Application.Run(new frmgiaodienchinh  ());    
 
         }
     }
