@@ -130,9 +130,6 @@
   <data name="z5422183318339_08751dae19364b41d7067269e6917aa8 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z5422183318339_08751dae19364b41d7067269e6917aa8 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hinh-nen-nuoc-xanh-duong-dep_092909307" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hinh-nen-nuoc-xanh-duong-dep_092909307.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="7361af996c8d524c02661a244cd767f5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7361af996c8d524c02661a244cd767f5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,6 +138,9 @@
   </data>
   <data name="1330715" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1330715.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ảnh chụp màn hình 2024-05-14 175244" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ảnh chụp màn hình 2024-05-14 175244.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Phong-nen-mau-xanh-cong-ty-365_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Phong-nen-mau-xanh-cong-ty-365_25.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,11 +157,11 @@
   <data name="hinh-nen-3d-mau-xanh_051044436" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hinh-nen-3d-mau-xanh_051044436.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="images (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cap nhat3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cap nhat3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="desktop-wallpaper-img-phong-cảnh-anime-phone-live-aesthetic-anime-sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\desktop-wallpaper-img-phong-cảnh-anime-phone-live-aesthetic-anime-sky.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hinh-nen-mau-tim_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hinh-nen-mau-tim_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,8 +169,17 @@
   <data name="03041" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\03041.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="xóa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xóa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="53fa149d77281a9965fe00735da988a0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\53fa149d77281a9965fe00735da988a0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (7).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tải xuống (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tải xuống (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="z5422247361401_99a19a550dc5ee8b305fd8c156ab9738" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z5422247361401_99a19a550dc5ee8b305fd8c156ab9738.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,6 +190,9 @@
   <data name="hinh-nen-dep-mau-xanh-ngoc_051044967" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hinh-nen-dep-mau-xanh-ngoc_051044967.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tải xuống (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tải xuống (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="z5422240165180_851fc22d305b25c826df7704e3c0909c" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z5422240165180_851fc22d305b25c826df7704e3c0909c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,14 +202,17 @@
   <data name="c29e2f533699616b07c7c17b40fd0fb2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\c29e2f533699616b07c7c17b40fd0fb2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hinh-nen-mau-hong-pastel-80" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hinh-nen-mau-hong-pastel-80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tải xuống (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tải xuống (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="xóa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\xóa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="desktop-wallpaper-img-phong-cảnh-anime-phone-live-aesthetic-anime-sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desktop-wallpaper-img-phong-cảnh-anime-phone-live-aesthetic-anime-sky.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chamsoc-02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chamsoc-02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="z5424641845729_c8f42426e410e706b51f099fda01cd81" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z5424641845729_c8f42426e410e706b51f099fda01cd81.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,14 +223,14 @@
   <data name="Blue-Pink-Pastel-Cute-Wallpaper-HD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blue-Pink-Pastel-Cute-Wallpaper-HD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="z5422247368041_9bb6acc84a683da599b2715cdb913d0a1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z5422247368041_9bb6acc84a683da599b2715cdb913d0a1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="tải xuống (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tải xuống (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="images (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="13340ff54e69e768ff37b0abc44cf36c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\13340ff54e69e768ff37b0abc44cf36c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="a4cb0da42ddd956987e33049b14811ef" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a4cb0da42ddd956987e33049b14811ef.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,14 +238,17 @@
   <data name="a7e4fd0a0599315162d1f5a4e86e0d24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a7e4fd0a0599315162d1f5a4e86e0d24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="images (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hinh-nen-mau-hong-pastel-80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hinh-nen-mau-hong-pastel-80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="z5422247368041_9bb6acc84a683da599b2715cdb913d0a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z5422247368041_9bb6acc84a683da599b2715cdb913d0a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,14 +256,20 @@
   <data name="0304" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0304.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="z5422183325257_0e87805bb78b41eec9cc3e17870d6f6f" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z5422183325257_0e87805bb78b41eec9cc3e17870d6f6f.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tải xuống (5)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tải xuống (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Blue-Pink-Pastel-Cute-Wallpaper-HD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blue-Pink-Pastel-Cute-Wallpaper-HD1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="13340ff54e69e768ff37b0abc44cf36c" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\13340ff54e69e768ff37b0abc44cf36c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="z5422183325257_0e87805bb78b41eec9cc3e17870d6f6f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z5422183325257_0e87805bb78b41eec9cc3e17870d6f6f.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hinh-nen-nuoc-xanh-duong-dep_092909307" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hinh-nen-nuoc-xanh-duong-dep_092909307.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tải xuống (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tải xuống (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="z5424641864757_b8bb1bc44014af8bf3f671db18df48bc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z5424641864757_b8bb1bc44014af8bf3f671db18df48bc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,10 +286,13 @@
   <data name="z5424641855719_bdefb4603f722d8ddf06a3680c847573" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z5424641855719_bdefb4603f722d8ddf06a3680c847573.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (1)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="z5422247368041_9bb6acc84a683da599b2715cdb913d0a1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z5422247368041_9bb6acc84a683da599b2715cdb913d0a1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tải xuống (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tải xuống (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="images (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ảnh chụp màn hình 2024-05-14 1752441" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ảnh chụp màn hình 2024-05-14 1752441.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

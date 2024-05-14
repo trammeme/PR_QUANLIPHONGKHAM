@@ -326,5 +326,32 @@
   <ItemGroup>
     <None Include="Resources\tải xuống %283%29.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chamsoc-02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ảnh chụp màn hình 2024-05-14 175244.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ảnh chụp màn hình 2024-05-14 1752441.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
