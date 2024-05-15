@@ -1,38 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GUI
 {
     public partial class frmgiaodienchinh : Form
     {
-        private Timer timer;
-        private int currentPosition;
-       
+        private TextBox txtChatDisplay;
+        private TextBox txtInput;
+        private Button btnSend;
+
         private Timer blinkTimer;
-        private Color[] colors = { Color.Red, Color.Lavender, Color.Cornsilk, Color.Yellow, Color.HotPink, Color.LightBlue }; // Mảng màu chứa các màu bạn muốn các button chớp
+        private Color[] colors = { Color.RosyBrown, Color.Beige, Color.LightGreen, Color.LightYellow, Color.LightPink, Color.DarkGray };
 
         public frmgiaodienchinh()
         {
             InitializeComponent();
-            InitializeRunningText();
-            InitializeBlinkTimer(); // Thêm dòng này để kích hoạt blinkTimer
-           
-        }
+            InitializeBlinkTimer();
 
-        private void InitializeRunningText()
-        {
-            currentPosition = 0;
-            timer = new Timer();
-            timer.Interval = 30; // Đặt tốc độ chạy của văn bản
-            timer.Start();
+
         }
 
         private void InitializeBlinkTimer()
@@ -43,53 +30,6 @@ namespace GUI
             blinkTimer.Start();
         }
 
-       
-        private int _cornerRadius = 20;
-
-      public class RoundedPanel : Panel
-{
-    private int _cornerRadius = 20;
-
-    public int CornerRadius
-    {
-        get { return _cornerRadius; }
-        set
-        {
-            _cornerRadius = value;
-            this.Invalidate(); // Yêu cầu vẽ lại khi thay đổi giá trị góc bo tròn
-        }
-    }
-
-    protected override void OnPaint(PaintEventArgs e)
-    {
-        base.OnPaint(e);
-
-        e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-
-        GraphicsPath path = new GraphicsPath();
-        Rectangle rect = new Rectangle(0, 0, this.Width, this.Height);
-
-        int radius = _cornerRadius;
-
-        path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
-        path.AddArc(rect.X + rect.Width - radius, rect.Y, radius, radius, 270, 90);
-        path.AddArc(rect.X + rect.Width - radius, rect.Y + rect.Height - radius, radius, radius, 0, 90);
-        path.AddArc(rect.X, rect.Y + rect.Height - radius, radius, radius, 90, 90);
-        path.CloseAllFigures();
-
-        this.Region = new Region(path);
-
-        using (SolidBrush brush = new SolidBrush(this.BackColor))
-        {
-            e.Graphics.FillPath(brush, path);
-        }
-
-        using (Pen pen = new Pen(this.ForeColor, 1))
-        {
-            e.Graphics.DrawPath(pen, path);
-        }
-    }
-}
         private void BlinkTimer_Tick(object sender, EventArgs e)
         {
             Button[] buttons = { button2 };
@@ -100,9 +40,17 @@ namespace GUI
             }
         }
 
-       
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            string message = txtInput.Text.Trim();
 
-       
+            if (!string.IsNullOrEmpty(message))
+            {
+                txtChatDisplay.AppendText("Bạn: " + message + Environment.NewLine);
+                txtInput.Clear();
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -116,5 +64,35 @@ namespace GUI
             frmDKLK frmDKLK = new frmDKLK();
             frmDKLK.ShowDialog();
         }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form chatForm = new Form();
+            chatForm.Text = "Trò chuyện tư vấn";
+            chatForm.Size = new Size(450, 500);
+
+            // Đặt vị trí của cửa sổ chat ở góc phải của màn hình
+            chatForm.StartPosition = FormStartPosition.Manual;
+            chatForm.Location = new Point(Screen.PrimaryScreen.WorkingArea.Right - chatForm.Width, 0);
+
+            // Tạo một Label để hiển thị văn bản chào mừng
+            Label welcomeLabel = new Label();
+            welcomeLabel.Text = "Xin chào! Bạn cần trợ giúp điều gì?";
+            welcomeLabel.AutoSize = true;
+            welcomeLabel.Location = new Point(10, 10);
+
+            // Thêm Label vào form
+            chatForm.Controls.Add(welcomeLabel);
+
+            // Hiển thị cửa sổ trò chuyện tư vấn
+            chatForm.ShowDialog();
+        }
+
+        
     }
 }
