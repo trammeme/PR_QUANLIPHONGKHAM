@@ -1,0 +1,314 @@
+create database sqlplpk
+use sqlplpk
+
+CREATE TABLE LoaiNV(
+  Maloainv VARCHAR(20) ,
+  Tenloainv NVARCHAR(20),
+PRIMARY KEY (Maloainv)
+);
+CREATE TABLE BenhNhan (
+  MaBN VARCHAR(20), 
+  TenBN NVARCHAR(50) NOT NULL,
+  Ngaysinh DATE NOT NULL,
+  DC NVARCHAR(30) NOT NULL, 
+  Sdt VARCHAR(15) NOT NULL,
+  PRIMARY KEY(MaBN)
+);
+CREATE TABLE BenhAn (
+  MaBA VARCHAR(20) , 
+  TenBS NVARCHAR(50), 
+  Chuandoan NVARCHAR(100),
+  MaBN VARCHAR(20) FOREIGN KEY (MaBN) REFERENCES BenhNhan(MaBN), 
+  PRIMARY KEY(MaBA)
+);
+
+CREATE TABLE ChuyenKhoa (
+ 
+  MaCK NVARCHAR(50) , 
+  TenCK NVARCHAR(50) NOT NULL,
+PRIMARY KEY(MaCK)
+);
+CREATE TABLE NhanVien (
+  MaNV NVARCHAR(50) , 
+  Hoten NVARCHAR(50) NOT NULL,
+  Gioitinh VARCHAR(3) NOT NULL,
+  Sdt VARCHAR(15) NOT NULL,
+  Ngaysinh DATE NOT NULL,
+  MaCK NVARCHAR(50) FOREIGN KEY (MaCK) REFERENCES ChuyenKhoa(MaCK),
+  Maloainv VARCHAR(20) FOREIGN KEY (Maloainv) REFERENCES LoaiNV(Maloainv), 
+  PRIMARY KEY(MaNV)
+);
+
+
+---------------
+CREATE TABLE Thuoc (
+ MaThuoc VARCHAR(20) PRIMARY KEY,
+ TenThuoc NVARCHAR(255) NOT NULL,
+ DonViTinh NVARCHAR(50) NOT NULL,
+ Gia DECIMAL(10,2) NOT NULL,
+
+);
+
+CREATE TABLE HoaDon (
+ MaHoaDon VARCHAR(20) ,
+ NgayLap DATE NOT NULL,
+ GioLap TIME NOT NULL,
+ MaBN VARCHAR(20) NOT NULL,
+ MaNV NVARCHAR(50) NOT NULL,
+ TongTien DECIMAL(10,2)  NULL,
+  FOREIGN KEY (MaBN) REFERENCES BenhNhan(MaBN),
+  FOREIGN KEY (MaNV) REFERENCES NhanVien(MaNV),
+PRIMARY KEY(MaHoaDon)
+);
+CREATE TABLE CaTruc (
+  MaCT VARCHAR(20) PRIMARY KEY,
+  TenCT NVARCHAR(50) NOT NULL,
+  Ngaytruc DATE NOT NULL
+);
+
+CREATE TABLE ChiTietCaTruc (
+  MaCT VARCHAR(20),
+  MaNV NVARCHAR(50),
+  FOREIGN KEY (MaCT) REFERENCES CaTruc(MaCT),
+  FOREIGN KEY (MaNV) REFERENCES NhanVien(MaNV),
+  PRIMARY KEY (MaCT, MaNV)
+);
+CREATE TABLE PhongKham(
+  MaPK VARCHAR(20) ,
+  TenPK NVARCHAR(50),
+   MaCT VARCHAR(20) FOREIGN KEY (MaCT) REFERENCES CaTruc(MaCT)
+	PRIMARY KEY(MaPK)
+	);
+	
+CREATE TABLE DichVu (
+    MaDV VARCHAR(20) PRIMARY KEY,
+    TenDV NVARCHAR(50) NOT NULL,
+    Mota NVARCHAR(255),
+    Gia DECIMAL(10,2) NOT NULL,
+);
+
+CREATE TABLE DKLK (
+  MaLK VARCHAR(20) PRIMARY KEY,
+  HotenBN NVARCHAR(25), 
+  Ngaysinh DATE,      
+  Email VARCHAR(25),  
+  TenCK NVARCHAR(50),  
+  Hoten NVARCHAR(50) NOT NULL, 
+  Ngaykham DATE NOT NULL,
+  Giokham TIME NOT NULL,
+  NgayDK DATE NOT NULL,
+  Trieuchung NVARCHAR(100),
+);
+
+
+
+CREATE TABLE CTDDV (
+    MaCTDV VARCHAR(20) ,
+    MaHoaDon VARCHAR(20) NOT NULL,
+    MaDV VARCHAR(20) NOT NULL,
+    DonGia DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (MaHoaDon) REFERENCES HoaDon(MaHoaDon),
+    FOREIGN KEY (MaDV) REFERENCES DichVu(MaDV),
+	PRIMARY KEY(MaCTDV)
+);
+CREATE TABLE CTHDT (
+    MaCTDT VARCHAR(20),
+    MaHoaDon VARCHAR(20) NOT NULL,
+    MaThuoc VARCHAR(20) NOT NULL,
+    SoLuong INT NOT NULL,
+    DonGia DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (MaHoaDon) REFERENCES HoaDon(MaHoaDon),
+    FOREIGN KEY (MaThuoc) REFERENCES Thuoc(MaThuoc),
+    PRIMARY KEY(MaCTDT, MaThuoc)
+);
+--------------bảng loại nhân viên----------------------
+INSERT INTO LoaiNV (Maloainv, Tenloainv)
+VALUES 
+('LNV001', N'Bác sĩ'),
+('LNV002', N'Lễ Tân'),
+('LNV003', N'Quản lí'),
+('LNV004', N'Dược Sĩ'),
+('LNV005', N'Thu Ngân'),
+('LNV006', N'Thu Ngân');
+
+
+
+--------------bảng bệnh nhân----------------------
+INSERT INTO BenhNhan (MaBN, TenBN, Ngaysinh, DC, Sdt)
+VALUES 
+('BN001', N'Nguyễn Văn Nam', '1990-01-01', N'BD', '0123456789'),
+('BN002', N'Trần Văn', '1995-05-15', N'HM', '0987654321'),
+('BN004', N'Trần Văn Minh ','1999-05-7', N'tt', '0999654321'),
+('BN003', N'Nguyễn Bình', '1985-12-25', N'Q1', '0369852147');
+
+--------------bảng bệnh án----------------------
+INSERT INTO BenhAn (MaBA, TenBS, Chuandoan, MaBN)
+VALUES 
+('BA001', N'Bác sĩ A', N'Viêm phổi', 'BN001'),
+('BA002', N'Bác sĩ B', N'Dau dạ dày', 'BN002'),
+('BA003', N'Bác sĩ C', N'Tiểu đường', 'BN003');
+
+--------------bảng chuyên khoa----------------------
+INSERT INTO ChuyenKhoa (MaCK, TenCK)
+VALUES
+  ('KNhi456', ' Khoa Nhi'),
+  ('KNoi789', ' Khoa Nội'),
+  ('KDL000', ' Khoa Da Liễu'),
+  ('KTK111', 'Khoa Thần Kinh');
+
+
+--------------bảng nhân viên----------------------
+INSERT INTO NhanVien (MaNV, Hoten,Gioitinh, Sdt, Ngaysinh, MaCK, Maloainv)
+VALUES
+---khoa than kinh
+  ('NV001', 'Nguyễn Ngọc Phương Trâm', 'Nam', '0912345678', '1990-01-01', 'KTK111', 'LNV001'),
+  ('NV016', 'Đoàn Thúy ko', 'Nam', '0907734567', '1992-08-03', 'KTK111', 'LNV001'), 
+  ('NV006', 'Tran Van F', 'Nam', '0932765432', '1995-06-06', 'KTK111', 'LNV001'),
+  ------khoa nhi
+  ('NV017', 'tô Thúy Vy', 'Nữ', '0901234557', '1992-03-03', 'KNhi456', 'LNV001'),
+  ('NV002', 'Dương Tô Quỳnh Như', 'Nu', '0987654321', '1991-02-02', 'KNhi456','LNV001'),
+  -----khoa noi
+  ('NV003', 'Đoàn Thúy Vy', 'Nam', '0901234567', '1992-03-03', 'KNoi789', 'LNV001'),
+  ('NV004', 'Pham Thi D', 'Nu', '0934567890', '1993-04-04', 'KNoi789', 'LNV001'),  
+  ('NV008', 'Pham Thi H', 'Nu', '0956789012', '1997-08-08', 'KNoi789','LNV001'),
+  ---khoa da lieu
+  ('NV005', 'Nguyen Thi E', 'Nu', '0967890123', '1994-05-05', 'KDL000', 'LNV001'),
+  ('NV007', 'Le Thi G', 'Nu', '0927056789', '1996-02-07', 'KDL000', 'LNV001'),
+  ------tiep tan
+  ('NV009', 'Lê Trúc Anh Đài', 'Nam', '0478012345', '2000-09-09', null,'LNV002'),
+    ('NV010', 'Nguyen Van I', 'Nam', '0989012345', '1998-09-01', null,'LNV002'),
+	----quan lí
+  ('NV011', 'le thanh nhan', 'Nam', '0989692345', '1998-09-09',null ,'LNV003'),
+  ('NV012', 'Tran Thi J', 'Nu', '0912345778', '1999-10-10', null,'LNV003'),
+  --duoc si
+    ('NV013', 'Ngoc Quoc Binh', 'Nam', '0989012025', '1998-04-09',null ,'LNV004'),
+  ('NV014', 'Nguyen To Lam', 'Nam', '0989012366', '1991-09-09',null ,'LNV004'),
+  ('NV015', 'Hoang Van Linh', 'Nam', '0989044345', '1990-07-09',null ,'LNV004'),
+  --------thu ngan
+    ('NV019', 'Nguyen haha', 'Nữ', '0989772366', '1991-09-09',null ,'LNV005'),
+  ('NV018', 'Nguyen To Tộ', 'Nam', '099992366', '1991-09-09',null ,'LNV005');
+
+
+--------------bảng thuốc----------------------
+INSERT INTO Thuoc (MaThuoc, TenThuoc, DonViTinh, Gia) VALUES
+('TH001', N'Paracetamol', N'Viên', 5.99),
+('TH002', N'Ibuprofen', N'Viên', 7.50),
+('TH003', N'Aspirin', N'Viên', 3.25),
+('TH004', N'Amoxicillin', N'Viên', 9.85),
+('TH005', N'Azithromycin', N'Viên', 12.75),
+('TH006', N'Loperamide', N'Viên', 6.20),
+('TH007', N'Fexofenadine', N'Viên', 8.40),
+('TH008', N'Cetirizine', N'Viên', 7.90),
+('TH009', N'Fluoxetine', N'Viên', 11.25),
+('TH010', N'Omeprazole', N'Viên', 10.75),
+('TH011', N'Prednisone', N'Viên', 8.65),
+('TH012', N'Levothyroxine', N'Viên', 6.75),
+('TH013', N'Hydrochlorothiazide', N'Viên', 9.30),
+('TH014', N'Lisinopril', N'Viên', 7.10),
+('TH015', N'Losartan', N'Viên', 8.90),
+('TH016', N'Atorvastatin', N'Viên', 12.40),
+('TH017', N'Metformin', N'Viên', 6.80),
+('TH018', N'Furosemide', N'Viên', 5.70),
+('TH019', N'Warfarin', N'Viên', 4.95),
+('TH020', N'Morphine', N'Viên', 15.75);
+
+------------bảng ca trực
+INSERT INTO CaTruc (MaCT, TenCT, Ngaytruc) VALUES
+('CT001', N'Ca Sáng', '2024-05-04'),
+('CT002', N'Ca Trưa', '2024-05-04'),
+('CT003', N'Ca Chiều', '2024-05-04'),
+('CT004', N'Ca Tối', '2024-05-04');
+
+----------------chct
+INSERT INTO ChiTietCaTruc (MaCT, MaNV) VALUES
+('CT001', 'NV001'),
+('CT001', 'NV002'),
+('CT001', 'NV003'),
+('CT001', 'NV005'),
+('CT001', 'NV009'),
+('CT001', 'NV011'),
+('CT001', 'NV019'),
+-------ca sáng
+('CT002', 'NV016'),
+('CT002', 'NV017'),
+('CT002', 'NV004'),
+('CT002', 'NV007'),
+('CT002', 'NV010'),
+('CT002', 'NV011'),
+('CT002', 'NV014'),
+('CT002', 'NV018'),
+------ca trưa
+('CT003', 'NV006'),
+('CT003', 'NV002'),
+('CT003', 'NV008'),
+('CT003', 'NV005'),
+('CT003', 'NV009'),
+('CT003', 'NV015'),
+('CT003', 'NV019'),
+--------------ca chiều
+('CT004', 'NV001'),
+('CT004', 'NV002'),
+('CT004', 'NV003'),
+('CT004', 'NV005'),
+('CT004', 'NV009'),
+('CT004', 'NV011'),
+('CT004', 'NV019');
+
+
+
+--------------bảng phòng khám----------------------
+INSERT INTO PhongKham (MaPK, TenPK, MaCT)
+VALUES 
+('PK001', N'Phòng khám nhi',  'CT001' ),
+('PK002', N'Phòng khám nội', 'CT001'),
+('PK003', N'Phòng khám thần kinh', 'CT001'),
+('PK004', N'Phòng khám da liễu', 'CT001');
+
+--------------bảng đăng kí lịch khám----------------------
+INSERT INTO DKLK (MaLK, HotenBN, Ngaysinh, Email, TenCK, Hoten, Ngaykham, Giokham, NgayDK, Trieuchung) 
+VALUES 
+('1', N'Trần Quốc Nguễn Duy', '2004-01-05', 'email1@example.com', N'Khoa Nhi', N'Dương Tô Quỳnh Như', '2024-08-08', '08:00:00', '2024-05-04', N'Đau bụng'),
+('2', N'Nguyễn Hữu Toàn', '2005-02-02', 'email2@example.com', N'Khoa Nội', N'Đoàn Thúy Vy', '2024-07-07', '09:00:00', '2024-05-04', N'Đau dạ dày'),
+('3', N'Đỗ Quuóc Huy', '2000-03-03', 'email3@example.com', N'Khoa Thần Kinh', N'Nguyễn Ngọc Phương Trâm', '2024-09-07', '10:00:00', '2024-05-04', N'Nhức đầu');
+
+
+--------------bảng hóa đơn----------------------
+
+
+INSERT INTO HoaDon (MaHoaDon, NgayLap, GioLap, MaBN, MaNV)
+VALUES
+('HD002', '2024-05-04', '09:30:00', 'BN002', 'NV019'),
+('HD001', '2024-05-01', '09:30:00', 'BN003', 'NV018'),
+ ('HD004', '2024-05-03', '09:30:00', 'BN001', 'NV012');
+
+
+--------------bảng dịch vụ----------------------
+INSERT INTO DichVu (MaDV, TenDV, Mota, Gia) VALUES 
+('DV001', N'Khám bệnh tổng quát', 'Bác sĩ thăm khám tổng thể', 200000.00),
+('DV002', N'Xét nghiệ máu', N'Xét nghiệm các chỉ số cơ bản trong máu', 150000.00),
+('DV003', N'Siêu âm', N'Siêu âm tổng hợp hoặc theo từng cơ quan', 300000.00),
+('DV004', N'Tư vấn dinh dương', N'tư vấn về chế độ dinh dưỡng hằng ngày ', 100000.00),
+('DV005', N'Tiêm phòng', N'tiêm các vắc-xin phòng bệnh', 100000.00); 
+
+--------------bảng chi tiết đơn dịch vụ----------------------
+
+INSERT INTO CTDDV (MaCTDV, MaHoaDon, MaDV, DonGia) VALUES
+('CTDDV001', 'HD001', 'DV001', 200000.00),
+('CTDDV002', 'HD001', 'DV002', 150000.00),
+('CTDDV003', 'HD001', 'DV003', 300000.00),
+('CTDDV004', 'HD001', 'DV004', 100000.00),
+('CTDDV005', 'HD001', 'DV005', 100000.00);
+
+--------------bảng chi tiết hóa đơn thuốc----------------------
+INSERT INTO CTHDT (MaCTDT, MaHoaDon, MaThuoc, SoLuong, DonGia) VALUES
+('CT001', 'HD001', 'TH001', 2, 5.99),
+('CT001', 'HD001', 'TH002', 1, 7.50),
+('CT002', 'HD002', 'TH003', 3, 3.25),
+('CT002', 'HD002', 'TH004', 2, 9.85),
+('CT002', 'HD002', 'TH005', 1, 12.75),
+('CT004', 'HD004', 'TH009', 1, 11.25),
+('CT004', 'HD004', 'TH010', 1, 10.75);
+
+
+
+
