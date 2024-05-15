@@ -353,5 +353,20 @@
   <ItemGroup>
     <None Include="Resources\Ảnh chụp màn hình 2024-05-14 1752441.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %288%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tin nhan nho.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
