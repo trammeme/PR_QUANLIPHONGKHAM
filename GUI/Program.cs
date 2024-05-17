@@ -14,7 +14,8 @@ namespace GUI
         {
             Application.EnableVisualStyles();
 
-            Application.Run(new frmgiaodienchinh  ());    
+            Application.Run(new frmLogin
+ ());    
 
         }
     }

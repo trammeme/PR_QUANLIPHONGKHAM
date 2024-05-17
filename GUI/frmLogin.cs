@@ -58,10 +58,8 @@ namespace GUI
             frmchucnang frmchucnang = new frmchucnang();
             // Gán sự kiện để khi form chức năng đóng lại, hiện lại form đăng nhập
             frmchucnang.FormClosed += (s, args) => this.Show();
-            // Hiển thị form chức năng
-            frmchucnang.Show();
-
-            // Điều chỉnh hiển thị các nút tương ứng với tên đăng nhập
+       frmchucnang.Show();
+            this.Hide();
             frmchucnang.AdjustButtonsVisibility(username);
         }
         private void btnExit_Click_1(object sender, EventArgs e)
