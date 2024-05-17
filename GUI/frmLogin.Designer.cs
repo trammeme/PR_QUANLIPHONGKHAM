@@ -49,10 +49,10 @@ namespace GUI
             this.btnExit.BackColor = System.Drawing.Color.Salmon;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnExit.Location = new System.Drawing.Point(586, 389);
+            this.btnExit.Location = new System.Drawing.Point(521, 311);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(135, 45);
+            this.btnExit.Size = new System.Drawing.Size(120, 36);
             this.btnExit.TabIndex = 13;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -63,10 +63,10 @@ namespace GUI
             this.btnLogin.BackColor = System.Drawing.Color.Salmon;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogin.Location = new System.Drawing.Point(259, 389);
+            this.btnLogin.Location = new System.Drawing.Point(230, 311);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(135, 45);
+            this.btnLogin.Size = new System.Drawing.Size(120, 36);
             this.btnLogin.TabIndex = 12;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -77,9 +77,9 @@ namespace GUI
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(183, 321);
+            this.label3.Location = new System.Drawing.Point(163, 257);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 29);
+            this.label3.Size = new System.Drawing.Size(112, 25);
             this.label3.TabIndex = 11;
             this.label3.Text = "PassWord";
             // 
@@ -89,9 +89,9 @@ namespace GUI
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(183, 234);
+            this.label2.Location = new System.Drawing.Point(163, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 29);
+            this.label2.Size = new System.Drawing.Size(119, 25);
             this.label2.TabIndex = 10;
             this.label2.Text = "User Name";
             // 
@@ -100,26 +100,27 @@ namespace GUI
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Ravie", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(274, 66);
+            this.label1.Location = new System.Drawing.Point(244, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(398, 76);
+            this.label1.Size = new System.Drawing.Size(330, 62);
             this.label1.TabIndex = 9;
             this.label1.Text = "Đăng Nhập";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(397, 325);
+            this.txtPassword.Location = new System.Drawing.Point(353, 260);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(291, 26);
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(259, 22);
             this.txtPassword.TabIndex = 8;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(397, 238);
+            this.txtUsername.Location = new System.Drawing.Point(353, 190);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(291, 26);
+            this.txtUsername.Size = new System.Drawing.Size(259, 22);
             this.txtUsername.TabIndex = 7;
             // 
             // errorProvider1
@@ -132,11 +133,11 @@ namespace GUI
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GUI.Properties.Resources.c29e2f533699616b07c7c17b40fd0fb2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label3);
@@ -144,7 +145,6 @@ namespace GUI
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmLogin";
             this.Text = "frmLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load_2);
